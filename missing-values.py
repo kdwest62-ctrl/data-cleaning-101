@@ -7,9 +7,11 @@ while True:
     option = input('Select option: ')
     if option == '1':
         print(df.to_string())
+        print('-' * 8)
     elif option == '2':
         output = df.isnull().sum()
         print(output)
+        print('-' * 8)
     elif option == '3':
         print('Program closed')
         break
