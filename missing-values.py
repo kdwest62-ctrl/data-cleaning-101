@@ -29,6 +29,10 @@ while True:
         output = df['age'].fillna(df['age'].median())
         print(output.to_string())
         print('-' * 8)
+    elif option == '5':
+        output = df['city'].fillna('Unknown')
+        print(output.to_string())
+        print('-' * 8)
     elif option == '7':
         print('Program closed')
         break
