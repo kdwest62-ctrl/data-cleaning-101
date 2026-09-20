@@ -2,7 +2,16 @@ import pandas as pd
 
 path = input('CSV path: ')
 df = pd.read_csv(path)
-print('1. Print CSV\n2. Count Missing Values (Column)\n3. Exit')
+options = ['1. Print CSV',
+           '2. Count missing values per column',
+           '3. Drop row with missing values in [email]',
+           '4. Fill missing values in [age] with the median',
+           '5. Fill missing values in [city] with "Unknown"',
+           '6. Drop rows where [signup_date] is missing',
+           '7. Exit']
+for item in options:
+    print(item)
+
 while True:
     option = input('Select option: ')
     if option == '1':
