@@ -33,6 +33,10 @@ while True:
         output = df['city'].fillna('Unknown')
         print(output.to_string())
         print('-' * 8)
+    elif option == '6':
+        output = df.dropna(subset=['signup_date'])
+        print(output.to_string())
+        print('-' * 8)
     elif option == '7':
         print('Program closed')
         break
