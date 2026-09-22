@@ -17,8 +17,12 @@ while True:
     elif option == '2':
         print(df.duplicated())
         print('-' * 8)
+    elif option == '3':
+        print(df.drop_duplicates())
+        print('-' * 8)
     elif option == '4':
         print('Program closed')
         break
     else:
         print('Invalid input')
+        print('-' * 8)
