@@ -43,3 +43,4 @@ while True:
         break
     else:
         print('Invalid input')
+		print('-' * 8)
