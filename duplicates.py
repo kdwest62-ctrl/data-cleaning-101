@@ -5,7 +5,9 @@ df = pd.read_csv(path)
 options = ['1. Print CSV',
            '2. Identify fully duplicated rows',
            '3. Remove exact duplicates',
-           '4. Exit']
+           '4. Check for duplicates based on [order_id] only',
+           '5. Verify final row count',
+           '6. Exit']
 for item in options:
     print(item)
 
