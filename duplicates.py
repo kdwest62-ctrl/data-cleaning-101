@@ -22,10 +22,15 @@ while True:
     elif option == '3':
         print(df.drop_duplicates())
         print('-' * 8)
-	elif option == '4':
+    elif option == '4':
         new_df = df.drop_duplicates(subset=['order_id'])
         print(new_df)
-		print('-' * 8)
+        print('-' * 8)
+    elif option == '5':
+        new_df = df.drop_duplicates()
+        print(new_df)
+        print(f'Final row count: {len(new_df)}')
+        print('-' * 8)
     elif option == '6':
         print('Program closed')
         break
