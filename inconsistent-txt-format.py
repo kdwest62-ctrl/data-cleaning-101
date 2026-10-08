@@ -8,7 +8,8 @@ tasks = ['1. Print CSV',
          '3. Standardize [department] to title case',
          '4. Lowercase all emails',
          '5. Strip any leading/trailing whitespace',
-         '6. Exit']
+         '6. Verify unique departments after cleaning',
+         '7. Exit']
 for item in tasks:
     print(item)
 while True:
@@ -39,6 +40,8 @@ while True:
     elif task == '5':
         pass
     elif task == '6':
+        pass
+    elif task == '7':
         print('Program closed')
         break
     else:
