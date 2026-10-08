@@ -2,6 +2,7 @@ import pandas as pd
 
 path = input('CSV path: ')
 df = pd.read_csv(path)
+print('Tasks')
 tasks = ['1. Print CSV',
          '2. Standardize [first_name] and [last_name] to title case',
          '3. Standardize [department] to title case',
@@ -24,7 +25,11 @@ while True:
     elif task == '2':
         df['first_name'] = df['first_name'].str.title()
         df['last_name'] = df['last_name'].str.title()
-        print(df.to_string())
+        print('Task complete')
+        print('-' * 8)
+    elif task == '3':
+        df['department'] = df['department'].str.title()
+        print('Task complete')
         print('-' * 8)
     elif task == '5':
         print('Program closed')
