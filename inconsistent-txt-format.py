@@ -21,6 +21,11 @@ while True:
             print('-' * 8)
         else:
             print('Invalid input')
+    elif task == '2':
+        df['first_name'] = df['first_name'].str.title()
+        df['last_name'] = df['last_name'].str.title()
+        print(df.to_string())
+        print('-' * 8)
     elif task == '5':
         print('Program closed')
         break
