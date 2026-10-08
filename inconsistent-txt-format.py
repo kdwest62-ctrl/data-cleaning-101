@@ -12,7 +12,15 @@ for item in tasks:
 while True:
     task = input('Select task: ')
     if task == '1':
-        print(df)
+        choice = input('(f) full or (t) truncated: ')
+        if choice == 'f':
+            print(df.to_string())
+            print('-' * 8)
+        elif choice == 't':
+            print(df)
+            print('-' * 8)
+        else:
+            print('Invalid input')
     elif task == '5':
         print('Program closed')
         break
