@@ -7,7 +7,8 @@ tasks = ['1. Print CSV',
          '2. Standardize [first_name] and [last_name] to title case',
          '3. Standardize [department] to title case',
          '4. Lowercase all emails',
-         '5. Exit']
+         '5. Strip any leading/trailing whitespace',
+         '6. Exit']
 for item in tasks:
     print(item)
 while True:
@@ -31,7 +32,13 @@ while True:
         df['department'] = df['department'].str.title()
         print('Task complete')
         print('-' * 8)
+    elif task == '4':
+        df['email'] = df['email'].str.lower()
+        print('Task complete')
+        print('-' * 8)
     elif task == '5':
+        pass
+    elif task == '6':
         print('Program closed')
         break
     else:
