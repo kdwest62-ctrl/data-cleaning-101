@@ -40,7 +40,8 @@ while True:
     elif task == '5':
         pass
     elif task == '6':
-        pass
+        print(df['department'].unique())
+        print('-' * 8)
     elif task == '7':
         print('Program closed')
         break
