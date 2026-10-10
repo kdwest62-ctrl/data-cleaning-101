@@ -38,7 +38,10 @@ while True:
         print('Task complete')
         print('-' * 8)
     elif task == '5':
-        pass
+        column = input('Column name: ')
+        df[column] = df[column].str.strip()
+        print('Task complete')
+        print('-' * 8)
     elif task == '6':
         print(df['department'].unique())
         print('-' * 8)
